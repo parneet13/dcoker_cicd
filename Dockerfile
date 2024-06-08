@@ -2,10 +2,10 @@ FROM centos:latest
 RUN yum install -y httpd \
 unzip \
 zip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip kindle.zip
-RUN cp -rf markups-kindle/* . 
-RUN rm -rf __MACOSX markups-kindle kindle.zip
+RUN unzip oxer.zip
+RUN cp -rf oxer-html/* . 
+RUN rm -rf oxer.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
