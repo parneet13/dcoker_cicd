@@ -1,5 +1,5 @@
 FROM centos:centos7.9.2009
-RUN yum install -y httpd \
+RUN yum install -y  nginx  \
 unzip \
 zip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /var/www/html/
