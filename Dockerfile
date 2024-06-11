@@ -1,4 +1,4 @@
-FROM centos:stream8
+FROM centos:centos7.9.2009
 
 MAINTAINER sanjay.dahiya332@gmail.com
 
