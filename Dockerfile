@@ -6,14 +6,11 @@ RUN apt-get update && apt-get install -y nginx \
     zip \
     unzip
 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html/
-
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /var/www/html/
 WORKDIR /var/www/html
-
-RUN unzip kindle.zip
-
-RUN cp -rfv markups-kindle/* . \
-    && rm -rf __MACOSX markups-kindle kindle.zip
+RUN unzip oxer.zip
+RUN cp -rf oxer-html/* . 
+RUN rm -rf oxer.zip
 
 CMD ["nginx", "-g", "daemon off;"]
 
