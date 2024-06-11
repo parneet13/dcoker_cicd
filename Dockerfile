@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:stream8
 
 MAINTAINER sanjay.dahiya332@gmail.com
 
