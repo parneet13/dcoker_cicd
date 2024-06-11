@@ -1,6 +1,5 @@
 FROM nginx:latest
-RUN yum install -y  unzip \
-zip
+RUN yum install -y  zip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip oxer.zip
