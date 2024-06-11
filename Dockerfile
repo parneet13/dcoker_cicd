@@ -10,7 +10,7 @@ RUN curl https://www.free-css.com/assets/files/free-css-templates/download/page2
 RUN unzip kindle.zip
 #RUN cp -rvf canvas/* .
 #RUN rm -rf canvas.zip
-RUN cp -rfv markups-kindle/* . \
-    && rm -rf __MACOSX markups-kindle kindle.zip
+RUN cp -rfv markups-kindle/* . 
+RUN rm -rf  kindle.zip
 CMD ["apache2ctl","-D","FOREGROUND"]
 EXPOSE 80
